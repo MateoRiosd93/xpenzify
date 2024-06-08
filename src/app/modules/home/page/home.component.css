@@ -33,6 +33,7 @@
 }
 
 .link-active {
+    text-decoration: underline;
     color: var(--color-primary);
     font-weight: 600;
 }
