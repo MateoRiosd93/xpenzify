@@ -1,0 +1,26 @@
+.dashboard-section {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.dashboard-title {      
+    margin: 0;
+    font-size: 24px;
+}
+
+.dashboard-grid {
+    padding: 24px 0px 0px 0px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    grid-template-rows: 3;
+}
+
+.card-expenses {
+    grid-column: 1 / 4;
+}
+
+.card-incomes {
+    grid-column: 1 / 4;
+}

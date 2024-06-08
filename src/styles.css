@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Poppins', 'Lucida Sans' !important;
+
+    /* Color variables */
+    --color-primary: #0077B6;
+    --color-secundary: #48CAE4;
+    --color-tertiary: #ADE8F4;
+
+    --color-bg: #F6F7FA;
+
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+app-home {
+    display: block;
+    height: calc(100% - 72px);
+}

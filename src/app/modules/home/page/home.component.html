@@ -1,0 +1,31 @@
+<app-header></app-header>
+<main class="home-main">
+  <nav class="home-nav">
+    <ul class="home-list">
+      <a [routerLink]="['dashboard']" routerLinkActive="link-active" class="list-nav-item">
+        <app-dashboard-icon></app-dashboard-icon>
+        <p class="nav-item-name">Dashboard</p>
+      </a>
+      <a [routerLink]="['expenses']" routerLinkActive="link-active" class="list-nav-item">
+        <app-expenses-icon></app-expenses-icon>
+        <p class="nav-item-name">Expenses</p>
+      </a>
+      <a [routerLink]="['incomes']" routerLinkActive="link-active" class="list-nav-item">
+        <app-incomes-icon></app-incomes-icon>
+        <p class="nav-item-name">Incomes</p>
+      </a>
+      <a [routerLink]="['pockets']" routerLinkActive="link-active" class="list-nav-item">
+        <app-pockets-icon></app-pockets-icon>
+        <p class="nav-item-name">Pockets</p>
+      </a>
+    </ul>
+  </nav>
+  <aside class="home-aside">
+    <div class="container-router-home">
+      <router-outlet></router-outlet>
+    </div>
+    <footer class="footer-container">
+      <p>Creado por <strong class="name-autor">Mateo Rios</strong>🚀</p>
+    </footer>
+  </aside>
+</main>
