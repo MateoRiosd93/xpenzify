@@ -1,0 +1,41 @@
+{
+    "expenses": [
+        {
+            "id": 1,
+            "name": "Apto padres",
+            "description": "Credito hipotecario apto padres.",
+            "amount": 1400000,
+            "category": ["gasto fijo"]
+        },
+        {
+            "id": 2,
+            "name": "Servicios",
+            "description": "Servicios Aquavento.",
+            "amount": 225000,
+            "category": ["gasto fijo"]
+        },
+        {
+            "id": 3,
+            "name": "Nubank Amor",
+            "description": "Pago minimo Nubank amor.",
+            "amount": 1400000,
+            "category": ["gasto fijo"]
+        },
+        {
+            "id": 4,
+            "name": "Iphone 14 pro max",
+            "description": "Cuota davivienda iphone.",
+            "amount": 295000,
+            "category": ["gasto fijo"]
+        },
+        {
+            "id": 5,
+            "name": "Hobby",
+            "description": "Futbol lunes y sabados.",
+            "amount": 51900,
+            "category": ["gasto fijo"]
+        }
+    ]
+}
+
+
