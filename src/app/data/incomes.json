@@ -1,25 +1,28 @@
 {
-    "expenses": [
+    "incomes": [
         {
             "id": 1,
             "name": "Quincena",
             "description": "Primera quincena.",
             "amount": 3185900,
-            "category": ["gasto fijo"]
+            "categories": ["salary"],
+            "date": "2024-06-15"
         },
         {
             "id": 2,
             "name": "Quincena",
             "description": "Segunda quincena.",
             "amount": 3185900,
-            "category": ["gasto fijo"]
+            "categories": ["salary"],
+            "date": "2024-06-15"
         },
         {
             "id": 3,
             "name": "Natillera",
             "description": "Pago de natillera.",
             "amount": 150000,
-            "category": ["gasto fijo"]
+            "categories": ["profits"],
+            "date": "2024-06-15"
         }
     ]
 }

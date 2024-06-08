@@ -1,0 +1,22 @@
+<p-table [value]="data" [tableStyle]="{ 'min-width': '30rem' }">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Name</th>
+            <th *ngIf="showDescription">Description</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-element>
+        <tr>
+            <td>{{ element.name }}</td>
+            <td *ngIf="showDescription">{{ element.description }}</td>
+            <td>{{ element.amount | currency }}</td>
+            <td> 
+                <p-chip *ngFor="let category of element.categories" [label]="category" />
+            </td>
+            <td>{{ element.date | date }}</td>
+        </tr>
+    </ng-template>
+</p-table>

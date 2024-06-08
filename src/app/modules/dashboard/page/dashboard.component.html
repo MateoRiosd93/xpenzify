@@ -2,50 +2,29 @@
     <h1 class="dashboard-title">Dashboard</h1>
     <ul class="dashboard-grid">
         <p-card class="card-salary" header="Salary">
-            <p>{{ salary | number }}</p>
+            <p>{{ salary | currency }}</p>
         </p-card>
         <p-card class="card-total-expenses" header="Expenses">
-            <p>{{ 5500000 | number }}</p>
+            <p>{{ 5500000 | currency }}</p>
         </p-card>
         <p-card class="card-total-incomes" header="Incomes">
-            <p>{{ 8000000 | number }}</p>
+            <p>{{ 8000000 | currency }}</p>
         </p-card>
         <p-card class="card-incomes" header="Next incomes">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aperiam fugiat explicabo hic ad
-                nesciunt
-                veritatis, earum ab tempora blanditiis neque. Optio, harum labore aliquam incidunt non consectetur
-                dignissimos maxime!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aperiam fugiat explicabo hic ad
-                nesciunt
-                veritatis, earum ab tempora blanditiis neque. Optio, harum labore aliquam incidunt non consectetur
-                dignissimos maxime!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aperiam fugiat explicabo hic ad
-                nesciunt
-                veritatis, earum ab tempora blanditiis neque. Optio, harum labore aliquam incidunt non consectetur
-                dignissimos maxime!</p>
+
+            <app-table [data]="incomes.slice(0,3)" [showDescription]="false"></app-table>
         </p-card>
         <p-card class="card-expenses" header="Next expenses">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aperiam fugiat explicabo hic ad
-                nesciunt
-                veritatis, earum ab tempora blanditiis neque. Optio, harum labore aliquam incidunt non consectetur
-                dignissimos maxime!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aperiam fugiat explicabo hic ad
-                nesciunt
-                veritatis, earum ab tempora blanditiis neque. Optio, harum labore aliquam incidunt non consectetur
-                dignissimos maxime!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aperiam fugiat explicabo hic ad
-                nesciunt
-                veritatis, earum ab tempora blanditiis neque. Optio, harum labore aliquam incidunt non consectetur
-                dignissimos maxime!</p>
+            <app-table [data]="expenses.slice(0,3)" [showDescription]="false"></app-table>
         </p-card>
         <p-card class="card-date" header="Date">
             <p>{{ date | date }}</p>
         </p-card>
         <p-card class="card-pockets" header="Pockets">
-            <p>{{ savings | number }}</p>
+            <p>{{ savings | currency }}</p>
         </p-card>
         <p-card class="card-trm" header="TRM">
-            <p>{{ 3956 | number }}</p>
+            <p>{{ 3956 | currency }}</p>
         </p-card>
     </ul>
 </section>

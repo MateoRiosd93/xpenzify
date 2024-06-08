@@ -9,5 +9,5 @@ import { ProfileComponent } from '../icons/profile/profile.component';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  name: string = "Mateo Rios"
+  name: string = "Mateo Rios Diaz"
 }
