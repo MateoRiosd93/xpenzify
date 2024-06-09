@@ -6,6 +6,7 @@ import { ExpensesIconComponent } from '../../../shared/components/icons/expenses
 import { IncomesIconComponent } from '../../../shared/components/icons/incomes-icon/incomes-icon.component';
 import { PocketsIconComponent } from '../../../shared/components/icons/pockets-icon/pockets-icon.component';
 import { SettingIconComponent } from '../../../shared/components/icons/setting-icon/setting-icon.component';
+import { FooterComponent } from '../../../shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +20,8 @@ import { SettingIconComponent } from '../../../shared/components/icons/setting-i
     ExpensesIconComponent, 
     IncomesIconComponent, 
     PocketsIconComponent,
-    SettingIconComponent
+    SettingIconComponent,
+    FooterComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

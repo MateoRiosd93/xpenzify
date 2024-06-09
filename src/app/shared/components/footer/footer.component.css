@@ -1,0 +1,16 @@
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-message {
+    font-weight: 200;
+}
+
+.name-autor {
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--color-primary);
+}

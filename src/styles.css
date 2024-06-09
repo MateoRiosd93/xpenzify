@@ -33,3 +33,14 @@ app-home {
 td {
     font-size: 14px;
 }
+
+/* Container and title modules */
+.module-section {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.module-title {      
+    margin: 0;
+    font-size: 24px;
+}

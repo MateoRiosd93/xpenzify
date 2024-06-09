@@ -51,15 +51,3 @@
     padding-top: 32px;
     height: 90%;
 }
-
-.footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.name-autor {
-    font-weight: bold;
-    text-decoration: underline;
-    color: var(--color-primary);
-}

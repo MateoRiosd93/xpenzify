@@ -8,7 +8,9 @@
 }
 
 .header-title {
-    font-size: 24px;
+    font-size: 28px;
+    color: var(--color-txt-primary);
+    font-weight: 600;
     margin: 0;
 }
 
@@ -23,6 +25,8 @@
 }
 
 .header-name-profile {
-    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-txt-primary);
+    font-weight: 600;
     margin: 0;
 }
