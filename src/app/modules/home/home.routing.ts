@@ -5,6 +5,7 @@ import { DashboardComponent } from '../dashboard/page/dashboard.component';
 import { ExpensesComponent } from '../expenses/page/expenses.component';
 import { IncomesComponent } from '../incomes/page/incomes.component';
 import { PocketsComponent } from '../pockets/page/pockets.component';
+import { SettingsComponent } from '../settings/settings/settings.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
       {
         path: 'pockets',
         component: PocketsComponent,
+      },
+      {
+        path: 'settings',
+        component: SettingsComponent,
       },
       {
         path: '',
