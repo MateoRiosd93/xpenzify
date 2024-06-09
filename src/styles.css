@@ -27,5 +27,9 @@ body,html {
 
 app-home {
     display: block;
-    height: calc(100% - 72px);
+    height: calc(100% - 64px);
+}
+
+td {
+    font-size: 14px;
 }

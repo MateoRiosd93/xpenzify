@@ -3,10 +3,6 @@
     padding-right: 32px;
 }
 
-.content{
-    height: 100%;
-}
-
 .dashboard-title {      
     margin: 0;
     font-size: 24px;
@@ -21,6 +17,73 @@
     gap: 16px;
 }
 
+.salary {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    text-wrap: pretty;
+}
+
+.expenses {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    text-wrap: pretty;
+}
+
+.date {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    text-wrap: pretty; 
+}
+
+.pockets {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    text-wrap: pretty;
+}
+
+.trm {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    text-wrap: pretty;
+}
+
+
+.incomes {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    text-wrap: pretty;
+}
+
+.message {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.message-table {
+    font-size: 16px;
+    font-weight: 200;
+    margin: 0 0 16px 0;
+}
+
+.link {
+    text-decoration: underline;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.link-icon {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    padding-bottom: 4px;
+}
+
 .card-incomes {
     height: 100%;
     grid-column: 4 / 7;
@@ -31,4 +94,8 @@
     height: 100%;
     grid-column: 1 / 4;
     grid-row: 2 / 4;
+}
+
+.subtitle-card-expenses {
+    display: flex;
 }

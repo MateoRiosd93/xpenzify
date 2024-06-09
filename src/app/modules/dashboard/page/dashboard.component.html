@@ -2,29 +2,68 @@
     <h1 class="dashboard-title">Dashboard</h1>
     <ul class="dashboard-grid">
         <p-card class="card-salary" header="Salary">
-            <p>{{ salary | currency }}</p>
+            <p class="salary">{{ salary | currency }}</p>
+            <span class="message">
+                Manage your salary <strong>
+                    <a class="link" [routerLink]="['/home/configuration']">here.</a>
+                </strong>
+            </span>
         </p-card>
         <p-card class="card-total-expenses" header="Expenses">
-            <p>{{ 5500000 | currency }}</p>
+            <p class="expenses">{{ 5500000 | currency }}</p>
+            <span class="message">
+                Manage your expenses <strong>
+                    <a class="link" [routerLink]="['/home/expenses']">here.</a>
+                </strong>
+            </span>
         </p-card>
         <p-card class="card-total-incomes" header="Incomes">
-            <p>{{ 8000000 | currency }}</p>
+            <p class="incomes">{{ 8000000 | currency }}</p>
+            <span class="message">
+                Manage your incomes <strong>
+                    <a class="link" [routerLink]="['/home/incomes']">here.</a>
+                </strong>
+            </span>
         </p-card>
         <p-card class="card-incomes" header="Next incomes">
-
-            <app-table [data]="incomes.slice(0,3)" [showDescription]="false"></app-table>
+            <div class="subtitle-card-expenses">
+                <p class="message-table">Go to incomes.</p>
+                <a [routerLink]="['/home/incomes']">
+                    <app-link-icon class="link-icon"></app-link-icon>
+                </a>
+            </div>
+            <app-table [data]="incomes.slice(0,3)"></app-table>
         </p-card>
         <p-card class="card-expenses" header="Next expenses">
-            <app-table [data]="expenses.slice(0,3)" [showDescription]="false"></app-table>
+            <div class="subtitle-card-expenses">
+                <p class="message-table">Go to expenses.</p>
+                <a class="link-icon" [routerLink]="['/home/expenses']">
+                    <app-link-icon></app-link-icon>
+                </a>
+            </div>
+            <app-table [data]="expenses.slice(0,3)"></app-table>
         </p-card>
         <p-card class="card-date" header="Date">
-            <p>{{ date | date }}</p>
+            <p class="date">{{ date | date }}</p>
+            <span class="message">
+                Attentive <strong>to pay</strong> expenses.
+            </span>
         </p-card>
         <p-card class="card-pockets" header="Pockets">
-            <p>{{ savings | currency }}</p>
+            <p class="pockets">{{ savings | currency }} - <strong>75%</strong></p>
+            <span class="message">
+                Manage your pocktes <strong>
+                    <a class="link" [routerLink]="['/home/pocktes']">here.</a>
+                </strong>
+            </span>
         </p-card>
         <p-card class="card-trm" header="TRM">
-            <p>{{ 3956 | currency }}</p>
+            <p class="trm">{{ 3956 | currency }}</p>
+            <span class="message">
+                Manage your TRM <strong>
+                    <a class="link" [routerLink]="['/home/configuration']">here</a>
+                </strong>
+            </span>
         </p-card>
     </ul>
 </section>
