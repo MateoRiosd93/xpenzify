@@ -1,6 +1,7 @@
 <app-header></app-header>
 <main class="home-main">
   <nav class="home-nav">
+    <!-- TODO: REVISAR LA FORMA DE REALIZAR EL MENU PLEGABLE Y QUE SOLO SE VENA LOS ICONOS. -->
     <ul class="home-list">
       <a [routerLink]="['dashboard']" routerLinkActive="link-active" class="list-nav-item">
         <app-dashboard-icon></app-dashboard-icon>
@@ -22,6 +23,7 @@
         <app-setting-icon></app-setting-icon>
         <p class="nav-item-name">Settings</p>
       </a>
+      <!-- TODO: REVISAR COMO PODRIA HACERSE UN MODULO DE BALANCES POR MES DONDE SE TENGA COMO UNA INFORMACION MAS DETALLADA DE GASTOS VS INGRESOS -->
     </ul>
   </nav>
   <aside class="home-aside">

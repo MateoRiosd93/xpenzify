@@ -1,3 +1,48 @@
 <section class="module-section">
     <h1 class="module-title">Expenses</h1>
+    <section class="section-form-expenses">
+        <form action="">
+            <div class="container-principal-info">
+                <div class="container-field-form">
+                    <label for="expense">Name</label>
+                    <input pInputText id="expense" aria-describedby="expense-help" />
+                    <small id="expense-help">
+                        Enter your expense name.
+                    </small>
+                </div>
+                <div class="container-field-form">
+                    <label for="amount">Amount</label>
+                    <p-inputNumber inputId="amount" formControlName="value" /> <small id="amount-help">
+                        Enter your expense amount.
+                    </small>
+                </div>
+                <div class="container-field-form">
+                    <label for="date">Date</label>
+                    <p-calendar [iconDisplay]="'input'" [showIcon]="true" inputId="date" />
+                    <small id="date-help">
+                        Enter your date to pay expense.
+                    </small>
+                </div>
+                <div class="container-field-form">
+                    <label for="category">Category</label>
+                    <p-dropdown [options]="[]" optionLabel="name" placeholder="Select a category" />
+                    <small id="category-help">
+                        Enter your expense category.
+                    </small>
+                </div>
+            </div>
+            <div class="container-field-form">
+                <label for="description">Description</label>
+                <textarea rows="5" cols="30" pInputTextarea>
+            </textarea>
+                <small id="description-help">
+                    Enter your expense description.
+                </small>
+            </div>
+            <div>
+                <p-button label="Save" size="small" icon="pi pi-check" [loading]="false" (onClick)="saveExpense()" />
+            </div>
+        </form>
+
+    </section>
 </section>

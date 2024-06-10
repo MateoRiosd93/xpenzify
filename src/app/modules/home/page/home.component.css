@@ -6,7 +6,7 @@
 .home-nav {
     width: 15%;
     height: 100%;
-    padding-top: 18px;
+    padding-top: 12px;
 }
 
 .home-list {
@@ -48,6 +48,6 @@
 }
 
 .container-router-home{
-    padding-top: 32px;
+    padding-top: 24px;
     height: 90%;
 }
