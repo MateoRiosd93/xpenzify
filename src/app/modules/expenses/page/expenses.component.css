@@ -1,7 +1,7 @@
 .section-form-expenses {
     width: 100%;
-    padding: 16px 12px;
-    margin-top: 12px;
+    padding: 18px 12px;
+    margin-top: 24px;
     background-color: #fff;
     border: 1px solid var(--color-border);
     border-radius: 10px;
@@ -29,8 +29,8 @@
 
 .section-table-expenses {
     width: 100%;
-    padding: 16px 12px;
-    margin-top: 12px;
+    padding: 18px 12px;
+    margin-top: 24px;
     background-color: #fff;
     border: 1px solid var(--color-border);
     border-radius: 10px;
