@@ -1,0 +1,24 @@
+<!-- TODO: REVISAR LA FORMA DE REALIZAR EL MENU PLEGABLE Y QUE SOLO SE VENA LOS ICONOS. -->
+<ul class="home-list">
+    <a [routerLink]="['dashboard']" routerLinkActive="link-active" class="list-nav-item">
+        <app-dashboard-icon></app-dashboard-icon>
+        <p class="nav-item-name">Dashboard</p>
+    </a>
+    <a [routerLink]="['expenses']" routerLinkActive="link-active" class="list-nav-item">
+        <app-expenses-icon></app-expenses-icon>
+        <p class="nav-item-name">Expenses</p>
+    </a>
+    <a [routerLink]="['incomes']" routerLinkActive="link-active" class="list-nav-item">
+        <app-incomes-icon></app-incomes-icon>
+        <p class="nav-item-name">Incomes</p>
+    </a>
+    <a [routerLink]="['pockets']" routerLinkActive="link-active" class="list-nav-item">
+        <app-pockets-icon></app-pockets-icon>
+        <p class="nav-item-name">Pockets</p>
+    </a>
+    <a [routerLink]="['settings']" routerLinkActive="link-active" class="list-nav-item">
+        <app-setting-icon></app-setting-icon>
+        <p class="nav-item-name">Settings</p>
+    </a>
+    <!-- TODO: REVISAR COMO PODRIA HACERSE UN MODULO DE BALANCES POR MES DONDE SE TENGA COMO UNA INFORMACION MAS DETALLADA DE GASTOS VS INGRESOS -->
+</ul>

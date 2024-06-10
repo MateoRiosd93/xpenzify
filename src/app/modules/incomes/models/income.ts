@@ -1,8 +1,7 @@
 export interface Income {
     id: number
     name: string
-    description: string
     amount: number
-    categories: string[]
+    category: string
     date: string
 }

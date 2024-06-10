@@ -3,41 +3,36 @@
         {
             "id": 1,
             "name": "Apto padres",
-            "description": "Credito hipotecario apto padres.",
             "amount": 1400000,
-            "categories": ["gasto fijo"],
+            "category": "gasto fijo",
             "date": "2024-06-15"
         },
         {
             "id": 2,
             "name": "Servicios",
-            "description": "Servicios Aquavento.",
             "amount": 225000,
-            "categories": ["gasto fijo"],
+            "category": "gasto fijo",
             "date": "2024-06-15"
         },
         {
             "id": 3,
             "name": "Nubank Amor",
-            "description": "Pago minimo Nubank amor.",
             "amount": 1400000,
-            "categories": ["gasto fijo"],
+            "category": "gasto fijo",
             "date": "2024-06-15"
         },
         {
             "id": 4,
             "name": "Iphone 14 pro max",
-            "description": "Cuota davivienda iphone.",
             "amount": 295000,
-            "categories": ["gasto fijo"],
+            "category": "gasto fijo",
             "date": "2024-06-15"
         },
         {
             "id": 5,
             "name": "Hobby",
-            "description": "Futbol lunes y sabados.",
             "amount": 51900,
-            "categories": ["gasto fijo"],
+            "category": "gasto fijo",
             "date": "2024-06-15"
         }
     ]

@@ -3,25 +3,22 @@
         {
             "id": 1,
             "name": "Quincena",
-            "description": "Primera quincena.",
             "amount": 3185900,
-            "categories": ["salary"],
+            "category": "salary",
             "date": "2024-06-15"
         },
         {
             "id": 2,
             "name": "Quincena",
-            "description": "Segunda quincena.",
             "amount": 3185900,
-            "categories": ["salary"],
+            "category": "salary",
             "date": "2024-06-15"
         },
         {
             "id": 3,
             "name": "Natillera",
-            "description": "Pago de natillera.",
             "amount": 150000,
-            "categories": ["profits"],
+            "category": "profits",
             "date": "2024-06-15"
         }
     ]

@@ -7,20 +7,15 @@ import { IncomesIconComponent } from '../../../shared/components/icons/incomes-i
 import { PocketsIconComponent } from '../../../shared/components/icons/pockets-icon/pockets-icon.component';
 import { SettingIconComponent } from '../../../shared/components/icons/setting-icon/setting-icon.component';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
+import { MenuComponent } from '../components/menu/menu.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     RouterOutlet, 
-    RouterLink, 
-    RouterLinkActive, 
-    HeaderComponent, 
-    DashboardIconComponent, 
-    ExpensesIconComponent, 
-    IncomesIconComponent, 
-    PocketsIconComponent,
-    SettingIconComponent,
+    HeaderComponent,
+    MenuComponent,
     FooterComponent
   ],
   templateUrl: './home.component.html',
