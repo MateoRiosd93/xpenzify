@@ -6,6 +6,7 @@ import { ExpensesComponent } from '../expenses/page/expenses.component';
 import { IncomesComponent } from '../incomes/page/incomes.component';
 import { PocketsComponent } from '../pockets/page/pockets.component';
 import { SettingsComponent } from '../settings/settings/settings.component';
+import { AnalyticsComponent } from '../analytics/page/analytics.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
       {
         path: 'pockets',
         component: PocketsComponent,
+      },
+      {
+        path: 'analytics',
+        component: AnalyticsComponent,
       },
       {
         path: 'settings',
