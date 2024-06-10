@@ -1,3 +1,55 @@
 <section class="module-section">
     <h1 class="module-title">Incomes</h1>
+    <section class="section-form">
+        <form action="">
+            <div class="container-principal-info">
+                <div class="container-field-form">
+                    <label class="label-form" for="income">Name</label>
+                    <input pInputText id="income" aria-describedby="income-help" placeholder="Name of your income..." />
+                    <small class="small-form" id="income-help">Enter your income name.</small>
+                </div>
+                <div class="container-field-form">
+                    <label class="label-form" for="amount">Amount</label>
+                    <p-inputNumber inputId="amount" formControlName="value" placeholder="Amount used..." /> 
+                    <small class="small-form" id="amount-help">Enter your income amount.</small>
+                </div>
+                <div class="container-field-form">
+                    <label class="label-form" for="date">Date</label>
+                    <p-calendar [iconDisplay]="'input'" [showIcon]="true" inputId="date" placeholder="Select payment date..." />
+                    <small class="small-form" id="date-help">Enter your date to pay income.</small>
+                </div>
+                <div class="container-field-form">
+                    <label class="label-form" for="category">Category</label>
+                    <p-dropdown [options]="[]" optionLabel="name" placeholder="Select a category..." />
+                    <small class="small-form" id="category-help">Enter your income category.</small>
+                </div>
+                <div class="container-buttons-form">
+                    <p-button label="Save" icon="pi pi-check" [loading]="false"
+                        (onClick)="saveIncome()" />
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="section-table">
+        <p-table [value]="data" [tableStyle]="{ 'min-width': '30rem' }" [styleClass]="'p-datatable-sm'">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Options</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-element>
+                <tr>
+                    <td>{{element.name}}</td>
+                    <td>{{element.amount}}</td>
+                    <td>{{element.date}}</td>
+                    <td>{{element.category}}</td>
+                    <td>{{'...'}}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </section>
 </section>

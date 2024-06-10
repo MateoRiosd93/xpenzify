@@ -22,7 +22,8 @@
 
 }
 
-body,html {
+body,
+html {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -44,7 +45,52 @@ td {
     padding-right: 32px;
 }
 
-.module-title {      
+.module-title {
     margin: 0;
     font-size: 24px;
+}
+
+/* Sections modules (form) styles */
+.section-form {
+    width: 100%;
+    padding: 18px 12px;
+    margin-top: 24px;
+    background-color: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+}
+
+.container-principal-info {
+    display: flex;
+    gap: 24px;
+}
+
+.container-field-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label-form {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.small-form {
+    font-weight: 200;
+}
+
+.section-table {
+    width: 100%;
+    padding: 18px 12px;
+    margin-top: 24px;
+    background-color: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+}
+
+.container-buttons-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
