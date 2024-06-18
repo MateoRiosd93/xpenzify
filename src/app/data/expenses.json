@@ -34,6 +34,27 @@
             "amount": 51900,
             "category": "gasto fijo",
             "date": "2024-06-15"
+        },
+        {
+            "id": 6,
+            "name": "Nubank Amor",
+            "amount": 1400000,
+            "category": "gasto fijo",
+            "date": "2024-06-15"
+        },
+        {
+            "id": 7,
+            "name": "Iphone 14 pro max",
+            "amount": 295000,
+            "category": "gasto fijo",
+            "date": "2024-06-15"
+        },
+        {
+            "id": 8,
+            "name": "Hobby",
+            "amount": 51900,
+            "category": "gasto fijo",
+            "date": "2024-06-15"
         }
     ]
 }
