@@ -5,11 +5,21 @@ import { ExpensesIconComponent } from '../../../../shared/components/icons/expen
 import { IncomesIconComponent } from '../../../../shared/components/icons/incomes-icon/incomes-icon.component';
 import { PocketsIconComponent } from '../../../../shared/components/icons/pockets-icon/pockets-icon.component';
 import { SettingIconComponent } from '../../../../shared/components/icons/setting-icon/setting-icon.component';
+import { AnalyticsIconComponent } from '../../../../shared/components/icons/analytics-icon/analytics-icon.component';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, DashboardIconComponent, ExpensesIconComponent, IncomesIconComponent, PocketsIconComponent, SettingIconComponent],
+  imports: [
+    RouterLink,
+    RouterLinkActive,
+    DashboardIconComponent,
+    ExpensesIconComponent,
+    IncomesIconComponent,
+    PocketsIconComponent,
+    AnalyticsIconComponent,
+    SettingIconComponent
+  ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })

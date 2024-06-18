@@ -10,7 +10,7 @@
                 </div>
                 <div class="container-field-form">
                     <label class="label-form" for="amount">Amount</label>
-                    <p-inputNumber inputId="amount" formControlName="value" placeholder="Amount used..." /> 
+                    <p-inputNumber inputId="amount" placeholder="Amount used..." />
                     <small class="small-form" id="amount-help">Enter your expense amount.</small>
                 </div>
                 <div class="container-field-form">
@@ -24,14 +24,20 @@
                     <small class="small-form" id="category-help">Enter your expense category.</small>
                 </div>
                 <div class="container-buttons-form">
-                    <p-button label="Save" icon="pi pi-check" [loading]="false"
-                        (onClick)="saveExpense()" />
+                    <p-button label="Create" icon="pi pi-plus" (onClick)="saveExpense()" />
                 </div>
             </div>
         </form>
     </section>
     <section class="section-table">
-        <p-table [value]="data" [tableStyle]="{ 'min-width': '30rem' }" [styleClass]="'p-datatable-sm'">
+        <p-table 
+            [value]="data" 
+            [tableStyle]="{ 'min-width': '30rem' }" 
+            [styleClass]="'p-datatable-sm p-datatable-striped'"
+            [paginator]="true"
+            [rows]="5"
+            [rowsPerPageOptions]="[5, 10, 20]"
+            >
             <ng-template pTemplate="header">
                 <tr>
                     <th>Name</th>

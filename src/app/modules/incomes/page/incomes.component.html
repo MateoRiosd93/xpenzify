@@ -31,7 +31,14 @@
         </form>
     </section>
     <section class="section-table">
-        <p-table [value]="data" [tableStyle]="{ 'min-width': '30rem' }" [styleClass]="'p-datatable-sm'">
+        <p-table 
+            [value]="data" 
+            [tableStyle]="{ 'min-width': '30rem' }" 
+            [styleClass]="'p-datatable-sm p-datatable-striped'"
+            [paginator]="true"
+            [rows]="5"
+            [rowsPerPageOptions]="[5, 10, 20]"
+            >
             <ng-template pTemplate="header">
                 <tr>
                     <th>Name</th>
