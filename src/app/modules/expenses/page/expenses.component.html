@@ -1,30 +1,36 @@
 <section class="module-section">
     <h1 class="module-title">Expenses</h1>
     <section class="section-form">
-        <form action="">
+        <form [formGroup]="form" (ngSubmit)="saveExpense()">
             <div class="container-principal-info">
                 <div class="container-field-form">
                     <label class="label-form" for="expense">Name</label>
-                    <input pInputText id="expense" aria-describedby="expense-help" placeholder="Name of your expense..." />
+                    <input pInputText id="expense" aria-describedby="expense-help" placeholder="Name of your expense..." formControlName="name"/>
                     <small class="small-form" id="expense-help">Enter your expense name.</small>
                 </div>
                 <div class="container-field-form">
                     <label class="label-form" for="amount">Amount</label>
-                    <p-inputNumber inputId="amount" placeholder="Amount used..." />
+                    <p-inputNumber inputId="amount" placeholder="Amount used..." formControlName="amount"/>
                     <small class="small-form" id="amount-help">Enter your expense amount.</small>
                 </div>
                 <div class="container-field-form">
                     <label class="label-form" for="date">Date</label>
-                    <p-calendar [iconDisplay]="'input'" [showIcon]="true" inputId="date" placeholder="Select payment date..." />
+                    <p-calendar [iconDisplay]="'input'" [showIcon]="true" inputId="date" placeholder="Select payment date..." formControlName="date" />
                     <small class="small-form" id="date-help">Enter your date to pay expense.</small>
                 </div>
                 <div class="container-field-form">
                     <label class="label-form" for="category">Category</label>
-                    <p-dropdown [options]="[]" optionLabel="name" placeholder="Select a category..." />
+                    <p-dropdown
+                        class="category"
+                        formControlName="category"
+                        [options]="categories"
+                        optionLabel="value"
+                        placeholder="Select a category..." 
+                    />
                     <small class="small-form" id="category-help">Enter your expense category.</small>
                 </div>
                 <div class="container-buttons-form">
-                    <p-button label="Create" icon="pi pi-plus" (onClick)="saveExpense()" />
+                    <p-button type="submit" label="Create" icon="pi pi-plus"/>
                 </div>
             </div>
         </form>
