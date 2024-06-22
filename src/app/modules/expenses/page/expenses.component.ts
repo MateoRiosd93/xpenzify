@@ -43,7 +43,27 @@ export class ExpensesComponent {
 
   constructor() { }
   saveExpense() {
-    console.log(this.form?.value)
+
+    if (!this.form?.valid) {
+      // monstrar alerta para que llene todos los campos.
+      return
+    }
+
+    const { name, amount, date } = this.form?.value
+    const { value: category } = this.form?.value.category
+    const id = Number(new Date().getTime().toString())
+
+    const newExpense: Expense = {
+      id,
+      name,
+      amount,
+      category,
+      date
+    }
+
+    this.data.push(newExpense)
+    // mostrar alerta dando claridad de que se añadio el gasto
+    this.form.reset()
   }
 }
 

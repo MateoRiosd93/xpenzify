@@ -56,8 +56,8 @@
             <ng-template pTemplate="body" let-element>
                 <tr>
                     <td>{{element.name}}</td>
-                    <td>{{element.amount}}</td>
-                    <td>{{element.date}}</td>
+                    <td>{{element.amount | currency }}</td>
+                    <td>{{element.date | date }}</td>
                     <td>{{element.category}}</td>
                     <td>{{'...'}}</td>
                 </tr>
